@@ -9,6 +9,7 @@
     "start": "next"
   },
   "dependencies": {
+    "contentful": "^9.2.13",
     "micro-method-router": "^0.1.0",
     "next": "^12.2.5",
     "react": "^18.2.0",

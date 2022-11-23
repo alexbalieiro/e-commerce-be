@@ -1,9 +1,12 @@
 import type { NextPage } from "next";
+import useContentful from "../data/useContentful";
 
 const Home: NextPage = () => {
-  console.log(process.env.NEXT_PUBLIC_HOLA);
-  const nombre = process.env.NEXT_PUBLIC_HOLA;
-  return <h1>Hola {nombre}</h1>;
+  const { getSolarSystem } = useContentful();
+  getSolarSystem().then((res: any) => {
+    console.log(res);
+  });
+  return <h1>Hola</h1>;
 };
 
 export default Home;
